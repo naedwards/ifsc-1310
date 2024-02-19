@@ -1,0 +1,24 @@
+/* ---- CSS Demo ---- */
+
+/*  ---------------Box Sizing-----------------  */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+/*  --------------- Global Styles -----------------  */
+
+body{
+    background-color: rgb(228, 215, 215);
+    /*font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;*/
+    font-family: "Playfair Display", serif;
+}
+
+header.primary{
+    background:#95EEC7
+}
