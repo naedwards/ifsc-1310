@@ -9,16 +9,89 @@ html {
   *:before,
   *:after {
     box-sizing: inherit;
+
   }
 
 /*  --------------- Global Styles -----------------  */
 
 body{
-    background-color: rgb(228, 215, 215);
+    background-color: rgb(248, 233, 233);
     /*font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;*/
     font-family: "Playfair Display", serif;
+
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
-header.primary{
-    background:#95EEC7
-}
+/*header.primary{
+    background:#47E69C
+    
+    Red -           #E65C47
+    Dark Green -    #5DA684
+    Brown -         #91645D
+    Darker Green -  #53665D
+    Black -         #3C3231
+    
+}*/
+
+header.primary {
+  background-color: #567492;
+  color:#ffffff; 
+  text-align:center;  
+  text-shadow:2px 2px #000000;
+  /*long form
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;*/
+  /*Single value short hand*/  
+  padding:40px;  
+  /* T,R,B,L 
+  padding: 20px 40px 20px 40px;  */
+  /* Two Value Top/Bottom / L/R 
+  padding: 20px 40px;*/  
+  }
+
+  header.primary h1 {
+    font-size: 2.4rem;
+    margin:20px 0 0;
+  }
+  
+  header.primary h1 a{
+    color:#ffffff;
+    text-decoration:none;
+  }
+  
+  header.primary h2 {
+    margin:0;
+    font-size: 1.4rem;
+  }
+  
+  header.primary nav{
+    max-width:900px;
+    margin: 20px auto;
+  }
+  
+  header.primary ul {
+    padding:10px 0;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+  }
+  
+  header.primary ul li{
+    list-style-type:none;
+  }
+  
+  header.primary nav a{
+    color:#fff;
+    text-decoration:none;
+    background-color:rgba(0,0,0,.4);
+    padding:7.5px 10px;
+    border-radius: 20px;
+    border: 1px solid #c0c0c0;
+    transition:.4s;
+  }
+  
+  header.primary nav a:hover{
+    background-color:rgba(0,0,0,.8);
+  }
