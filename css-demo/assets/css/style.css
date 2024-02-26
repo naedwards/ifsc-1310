@@ -11,6 +11,20 @@ html {
     box-sizing: inherit;
 
   }
+  
+/*  --------------- Responsive Images -----------------  */
+
+img{
+  max-width:100%;
+}
+
+/*  --------------- Utility Classes -----------------  */
+
+.container{
+  max-width: 960px;
+  width:80vw;
+  margin:40px auto;
+}
 
 /*  --------------- Global Styles -----------------  */
 
@@ -94,4 +108,76 @@ header.primary {
   
   header.primary nav a:hover{
     background-color:rgba(0,0,0,.8);
+  }
+
+  #content{
+  line-height:1.5;
+  }
+  
+  #content h2{
+   color: #3b638b;
+   border-bottom:1px dotted #c0c0c0;
+  }
+  
+  #content h3{
+    border-left: 7.5px solid #3b638b;
+    padding:7.5px;
+  }
+
+  #blog{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    gap:2rem;
+  }
+
+  #blog .post{
+    box-shadow: 0 8px 16px rgba(0,0,0,.6);
+    padding: 10px;
+    border-radius:4px;
+    font-size:.8rem;
+  }
+  
+  #blog figure{
+    margin:0;
+  }
+  
+  #blog figcaption{
+    text-transform:uppercase;
+    font-size:.6rem;
+    text-align:center;
+    color:#c0c0c0;
+  }
+  
+  #blog header{
+    padding-top:10px;
+    font-size:.6rem;
+    color:#c0c0c0;
+  }
+  
+  #blog header h2{
+    margin:0;
+  }
+  
+  #blog a{
+    color:#3b638b;
+  }
+  
+  #blog .post:hover{
+    box-shadow: 0 8px 16px rgba(0,0,0,.6);
+  }
+
+/*  --------------- Helps with small screens -----------------  */
+
+  @media screen and (max-width: 600px) {
+    header.primary ul {
+      flex-direction: column;
+      gap:10px;
+      max-width:250px;
+      margin:auto;
+    }
+    
+    header.primary nav a{
+      display:block;
+    }
   }
