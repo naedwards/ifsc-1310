@@ -1,9 +1,15 @@
 body{
     background-color:#9dacbb;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     font-family: "Playfair Display", serif;
+    color: #3B1D1B;
     margin: 40px;
-    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+div.header{
+    color:#373B1B;
+    text-shadow:2px 2px #B7BA9C;
+    background-color: #BA9E9C;
 }
 
 .wrapper{
@@ -19,6 +25,7 @@ body{
 .box {
     border-radius: 5px;
     padding: 10px;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
   }
 
 .header{
@@ -32,12 +39,16 @@ body{
     grid-column: 1/5;
     grid-row: 2;
     border:5px solid #c0c0c0;
+    background-color: #B7BA9C;
 }
 
 .content2{
     grid-column: 4/5;
     grid-row: 2;
+    margin: 10px;
     border:5px solid #c0c0c0;
+    background-color: #3F5265;
+    color: #ffffff;
 }
 
 

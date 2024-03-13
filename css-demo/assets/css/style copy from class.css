@@ -53,15 +53,14 @@ img{
 /*  --------------- Global Styles -----------------  */
 
 body{
-    background-color: #EBCDC5;
+    background-color: rgb(248, 233, 233);
     /*font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;*/
     font-family: "Playfair Display", serif;
     margin: 0;
     
 }
 
-/*
-body{
+body::after {
   background-image: url(../img/fractal\ background.jpg);
   content: "";
   background-repeat: no-repeat;
@@ -69,25 +68,24 @@ body{
   background-position: top,center;
   opacity: 0.7;
 }
-*/
 
 /*header.primary{
+    background:#47E69C
     
-    Mint -          #C4EAD2
-    Peach -         #EBCDC5
-    Salmon -        #EBC5D6
-    Green -         #316B46
-    Brown -         #6B3E31
-    Wine -          #6B314B
+    Red -           #E65C47
+    Dark Green -    #5DA684
+    Brown -         #91645D
+    Darker Green -  #53665D
+    Black -         #3C3231
     
 }*/
 
 header.primary {
-  background-color: #C4EAD2;
+  background-color: #567492;
   background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
-  color:#6B314B; 
+  color:#ffffff; 
   text-align:center;  
-  text-shadow:2px 2px #ffffff;
+  text-shadow:2px 2px #000000;
   /*long form
   padding-top: 40px;
   padding-right: 40px;
@@ -107,7 +105,7 @@ header.primary {
   }
   
   header.primary h1 a{
-    color:#6B314B;
+    color:#ffffff;
     text-decoration:none;
   }
   
@@ -118,25 +116,22 @@ header.primary {
   
   header.primary nav{
     max-width:900px;
-    margin: 20px 20px;
+    margin: 20px auto;
   }
   
   header.primary ul {
-    padding:10px 0px;
+    padding:10px 0;
     display:flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content:space-around;
   }
   
   header.primary ul li{
     list-style-type:none;
-    margin: 15px;
   }
   
   header.primary nav a{
-    color:#ffffff;
-    text-shadow:0px 0px #ffffff;
-    font-size: 105%;
+    color:#fff;
     text-decoration:none;
     background-color:rgba(0,0,0,.4);
     padding:7.5px 10px;
@@ -154,12 +149,12 @@ header.primary {
   }
   
   #content h2{
-   color: #316B46;
+   color: #3b638b;
    border-bottom:1px dotted #c0c0c0;
   }
   
   #content h3{
-    border-left: 7.5px solid #316B46;
+    border-left: 7.5px solid #3b638b;
     padding:7.5px;
   }
 
@@ -181,7 +176,6 @@ header.primary {
     font-size:.8rem;
     transition:.5s;
     flex:1;
-    background-color: #EBC5D6;
   }
   
   #blog figure{
@@ -206,7 +200,7 @@ header.primary {
   }
   
   #blog a{
-    color:#316B46;
+    color:#3b638b;
   }
   
   #blog .post:hover{
@@ -215,7 +209,7 @@ header.primary {
 
 
   #practice h2{
-    color: #316B46;
+    color: #3b638b;
     border-bottom: 1px solid #c0c0c0;
   }
 
@@ -230,7 +224,7 @@ header.primary {
     margin:10px;
   }
   th{
-    background-color: #6B3E31;
+    background-color: #172635;
     color:#ffffff;
     padding:7.5px;
   }
@@ -250,7 +244,7 @@ header.primary {
 
 
   #practice ol{
-    list-style-type:circle;
+    list-style-type:"\1F44D";
   }
 
   #practice ul ul{
@@ -274,7 +268,7 @@ header.primary {
     padding: 20px 40px;
     margin: 40px 80px;
     border-radius: 30px 0;
-    background-color: #316B46;
+    background-color: #3b638b;
     color: #ffffff;
     line-height: 1.4;
     text-shadow: 1px 1px #000;
@@ -289,7 +283,7 @@ header.primary {
 
 
   aside[role="complementary"]{
-    background-color: #6B314B;
+    background-color: #172635;
     color:#ffffff;
     padding:1.9rem;
   }
@@ -316,11 +310,11 @@ header.primary {
   }
   
   #colophon{
-    background-color: #C4EAD2;
+    background-color: #3b638b;
     background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
     text-align:center;
     padding:10px;
-    color:#6B3E31;
+    color:#ffffff;
     font-size:1.1rem;
   }
 
